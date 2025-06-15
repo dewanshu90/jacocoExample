@@ -1,5 +1,6 @@
 package com.training.example.JacocoExample;
 
+import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
 import org.junit.Test;
 
@@ -26,7 +27,7 @@ public class PalindromeTest {
 	@Test
 	public void whenNonPalindromeWord_thenReject() {
 	    Palindrome palindromeTester = new Palindrome();
-	    assertFalse(palindromeTester.isPalindrome("hello"));
+		assertFalse(palindromeTester.isPalindrome("hello"));
 	}
 
 	@Test
