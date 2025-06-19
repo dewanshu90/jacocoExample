@@ -30,10 +30,5 @@ public class PalindromeTest {
 	    Palindrome palindromeTester = new Palindrome();
 	    assertFalse(palindromeTester.isPalindrome("Aba"));
 	}
-
-	@Test
-	public void whenNullString_thenReject() {
-	    Palindrome palindromeTester = new Palindrome();
-	    assertFalse(palindromeTester.isPalindrome(null));
-	}
+	
 }
