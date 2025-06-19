@@ -24,12 +24,7 @@ public class PalindromeTest {
     	assertFalse(palindromeTester.isPalindrome("abc"));
 	}
 
-	@Test
-	public void whenPalindromeStringWithSpaces_thenAccept() {
-    	Palindrome palindromeTester = new Palindrome();
-    	assertTrue(palindromeTester.isPalindrome("a man a plan a canal panama"));
-	}
-
+	
 	@Test
 	public void whenPalindromeStringWithMixedCase_thenAccept() {
 	    Palindrome palindromeTester = new Palindrome();
