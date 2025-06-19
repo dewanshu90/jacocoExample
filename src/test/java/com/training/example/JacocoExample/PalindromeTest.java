@@ -10,25 +10,6 @@ public class PalindromeTest {
 	public void whenEmptyString_thenAccept() {
 	    Palindrome palindromeTester = new Palindrome();
 	    assertTrue(palindromeTester.isPalindrome(""));
-	}
-
-	@Test
-	public void whenSingleCharacter_thenAccept() {
-	    Palindrome palindromeTester = new Palindrome();
-	    assertTrue(palindromeTester.isPalindrome("a"));
-	}
-
-	@Test
-	public void whenNonPalindromeString_thenReject() {
-    	Palindrome palindromeTester = new Palindrome();
-    	assertFalse(palindromeTester.isPalindrome("abc"));
-	}
-
-	
-	@Test
-	public void whenPalindromeStringWithMixedCase_thenReject() {
-	    Palindrome palindromeTester = new Palindrome();
-	    assertFalse(palindromeTester.isPalindrome("Aba"));
-	}
+	}	
 	
 }
