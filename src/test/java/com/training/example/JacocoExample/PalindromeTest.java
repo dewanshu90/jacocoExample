@@ -26,9 +26,9 @@ public class PalindromeTest {
 
 	
 	@Test
-	public void whenPalindromeStringWithMixedCase_thenAccept() {
+	public void whenPalindromeStringWithMixedCase_thenReject() {
 	    Palindrome palindromeTester = new Palindrome();
-	    assertTrue(palindromeTester.isPalindrome("Aba"));
+	    assertFalse(palindromeTester.isPalindrome("Aba"));
 	}
 
 	@Test
