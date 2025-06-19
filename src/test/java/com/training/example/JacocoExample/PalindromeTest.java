@@ -16,5 +16,29 @@ public class PalindromeTest {
 	public void whenSingleCharacter_thenAccept() {
 	    Palindrome palindromeTester = new Palindrome();
 	    assertTrue(palindromeTester.isPalindrome("a"));
-	}	
+	}
+
+	@Test
+	public void whenNonPalindromeString_thenReject() {
+    	Palindrome palindromeTester = new Palindrome();
+    	assertFalse(palindromeTester.isPalindrome("abc"));
+	}
+
+	@Test
+	public void whenPalindromeStringWithSpaces_thenAccept() {
+    	Palindrome palindromeTester = new Palindrome();
+    	assertTrue(palindromeTester.isPalindrome("a man a plan a canal panama"));
+	}
+
+	@Test
+	public void whenPalindromeStringWithMixedCase_thenAccept() {
+	    Palindrome palindromeTester = new Palindrome();
+	    assertTrue(palindromeTester.isPalindrome("Aba"));
+	}
+
+	@Test
+	public void whenNullString_thenReject() {
+	    Palindrome palindromeTester = new Palindrome();
+	    assertFalse(palindromeTester.isPalindrome(null));
+	}
 }
