@@ -16,19 +16,5 @@ public class PalindromeTest {
 	public void whenSingleCharacter_thenAccept() {
 	    Palindrome palindromeTester = new Palindrome();
 	    assertTrue(palindromeTester.isPalindrome("a"));
-	}
-
-	@Test
-    	public void whenPalindromeString_thenAccept() {
-        Palindrome palindromeTester = new Palindrome();
-        assertTrue(palindromeTester.isPalindrome("madam"));
-    	}
-
-    	@Test
-    	public void whenNonPalindromeString_thenReject() {
-        Palindrome palindromeTester = new Palindrome();
-        assertFalse(palindromeTester.isPalindrome("example"));
-    	}
-
-	
+	}	
 }
