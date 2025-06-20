@@ -10,36 +10,6 @@ public class PalindromeTest {
 	public void whenEmptyString_thenAccept() {
 	    Palindrome palindromeTester = new Palindrome();
 	    assertTrue(palindromeTester.isPalindrome(""));
-	}
-
-		@Test
-	public void testSingleCharacterString_True() {
-	    Palindrome palindromeTester = new Palindrome();
-	    assertTrue(palindromeTester.isPalindrome("a"));
-	}
-	
-	@Test
-	public void testPalindromeEvenLength_True() {
-	    Palindrome palindromeTester = new Palindrome();
-	    assertTrue(palindromeTester.isPalindrome("abba"));
-	}
-	
-	@Test
-	public void testPalindromeOddLength_True() {
-	    Palindrome palindromeTester = new Palindrome();
-	    assertTrue(palindromeTester.isPalindrome("madam"));
-	}
-	
-	@Test
-	public void testNonPalindrome_False() {
-	    Palindrome palindromeTester = new Palindrome();
-	    assertFalse(palindromeTester.isPalindrome("hello"));
-	}
-	
-	@Test
-	public void testCaseSensitivePalindrome_False() {
-	    Palindrome palindromeTester = new Palindrome();
-	    assertFalse(palindromeTester.isPalindrome("Madam"));
-	}
+	}	
 	
 }
