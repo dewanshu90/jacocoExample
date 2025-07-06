@@ -12,4 +12,16 @@ public class PalindromeTest {
 	    assertTrue(palindromeTester.isPalindrome(""));
 	}
 	
+    @Test
+    public void whenPalindromeString_thenAccept() {
+        Palindrome palindromeTester = new Palindrome();
+        assertTrue(palindromeTester.isPalindrome("madam"));
+    }
+    
+    @Test
+    public void whenNonPalindromeString_thenReject() {
+        Palindrome palindromeTester = new Palindrome();
+        assertFalse(palindromeTester.isPalindrome("hello"));
+    }
+
 }
